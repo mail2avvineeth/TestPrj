@@ -14,7 +14,7 @@ $cid=$_GET['cid'];
             var jsonUrl = "Functions/getLatLon.php?tid=<?php echo $cid ?>";            
             var myLocation,map,marker,lat,lon;
             lat = lon = -1;
-            $.ajaxSetup({cache: false});            
+            $.ajaxSetup({cache: true});            
 
             $('#mapDiv').oneTime("1s",'timerOneTime',function(i)
             {
